@@ -11,9 +11,7 @@ import android.os.Bundle;
 
 public class MainActivity extends FragmentActivity {
 
-    private static final int NUM_PAGES = 3;
-    private ViewPager mPager;
-    private PagerAdapter mPagerAdapter;
+    private static final int NUM_PAGES = 4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +19,8 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.activity_main);
 
         // Instantiate a ViewPager and a PagerAdapter.
-        mPager = (ViewPager) findViewById(R.id.viewpager);
-        mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
+        ViewPager mPager = (ViewPager) findViewById(R.id.viewpager);
+        PagerAdapter mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
     }
 
