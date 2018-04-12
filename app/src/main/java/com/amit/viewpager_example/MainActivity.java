@@ -11,7 +11,7 @@ import android.os.Bundle;
 
 public class MainActivity extends FragmentActivity {
 
-    private static final int NUM_PAGES = 4;
+    private static final int NUM_PAGES = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
